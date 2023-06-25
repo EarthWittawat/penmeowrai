@@ -10,7 +10,7 @@ export default function Home() {
       <div className='bg-white min-h-screen'>
 
         <div className="mx-auto max-w-2xl">
-            <div className="flex pt-8 flex-col md:flex-row justify-center items-center">
+            <div className="flex pt-8 flex-col lg:flex-row justify-center items-center">
             <img
           className="object-cover w-1/2 md:w-64 lg:w-full"
           src="/Logo.png"

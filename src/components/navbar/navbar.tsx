@@ -31,7 +31,7 @@ export default function navbar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                    <Link className='text-black text-2xl font-bold' href={'/'}>Meow Meow 🔍</Link>
+                    <Link className='text-black text-2xl font-bold' href={'/'}>เป็น Meow ไร 🐈</Link>
                 </div>
               
               </div>

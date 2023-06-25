@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '@/components/navbar/navbar'
 import { Button } from '@nextui-org/react'
 import { useEffect, useState } from 'react'
+import Footer from '@/components/footer/footer'
 import withReactContent from 'sweetalert2-react-content'
 import Swal from 'sweetalert2'
 import useSound from "use-sound";
@@ -73,6 +74,7 @@ export default function Translate() {
     </div>
     </div>
     </div>
+    <Footer/>
     </main>
   )
     }

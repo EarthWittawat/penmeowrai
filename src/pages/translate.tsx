@@ -7,10 +7,9 @@ import Footer from '@/components/footer/footer'
 import withReactContent from 'sweetalert2-react-content'
 import Swal from 'sweetalert2'
 import useSound from "use-sound";
-import { FacebookShareButton, FacebookIcon } from 'react-share';
 export default function Translate() {
     const [data, setData] = useState([] as any)
-    const [play] = useSound("sent.wav");
+    const [play] = useSound("sent.mp3");
     const [context, setContext]  =  useState([] as any);
     const show = () => {
         const MySwal = withReactContent(Swal)
@@ -70,13 +69,7 @@ export default function Translate() {
       }} className='flex flex-row justify-center items-center space-x-3'>
       <input className="shadow appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" onChange={(e)=>setContext(e.target.value)} placeholder="แปลภาษาเหมียว"></input>
         <Button shadow color="success" auto onClick={translate}>แปลภาษาเหมียว</Button>
-       
         </form>
-        <FacebookShareButton
-                url={"https://peing.net/ja/"}
-                quote={"フェイスブックはタイトルが付けれるようです"}
-                hashtag={"#hashtag"}
-                className="Demo__some-network__share-button" children={undefined}      ></FacebookShareButton>
     </div>
     </div>
     </div>

@@ -17,22 +17,25 @@ export default function Translate() {
         })
     }
     useEffect(()=>{
+      const fetchData = async () => {
+        await fetch('data.json')
+        .then(response => {
+            return response.json();
+        }).then(data => {
+            setData(data)
+        }).catch((e: Error) => {
+            console.log(e.message);
+        });
+    };
+    fetchData();
+    }, [data]);
         for (const [key, value] of Object.entries(data)) {
             if(context.includes(key)){
                 setContext(context.replace(key,value))
             }
         }
-    })
     const translate = () => {
-        fetch('data.json')
-        .then(response => {
-            return response.json();
-        }).then(data => {
-            setData(data)
-            console.log(data)
-        }).catch((e: Error) => {
-            console.log(e.message);
-        });
+        
         play();
         show();
         

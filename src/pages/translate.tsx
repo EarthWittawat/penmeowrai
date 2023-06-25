@@ -10,11 +10,6 @@ export default function Translate() {
     const [data, setData] = useState([] as any)
     const [play] = useSound("sent.wav");
     const [context, setContext]  =  useState([] as any);
-    const toxic = {
-        "ไอสัส":"meowmeow",
-        "แย่":"meow!!",
-    };
-    
     const show = () => {
         const MySwal = withReactContent(Swal)
         MySwal.fire({
